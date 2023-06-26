@@ -15,7 +15,7 @@ function StudentLogin() {
 
   return (
     <div>
-      <h2>Log in as a Student</h2>
+      <h1>Log in as a Student</h1>
       <p>
         Use the Registration id and password <br /> provided by your teacher to
         log in
@@ -29,7 +29,7 @@ function StudentLogin() {
                   required: true,
                   minLength: 10,
                   maxLength: 20,
-                })} 
+                })}
                 name="registrationId"
                 placeholder="Registration Id"
               />
@@ -38,7 +38,7 @@ function StudentLogin() {
           <div>
             <label>
               <input
-                {...register("password", { required: true })} 
+                {...register("password", { required: true })}
                 name="password"
                 placeholder="Password"
                 type="password"
