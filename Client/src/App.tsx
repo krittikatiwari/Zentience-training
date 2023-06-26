@@ -1,7 +1,5 @@
 import React from 'react';
 import { Route,Routes } from 'react-router-dom';
-import StudentLogin from './component/StudentLogin/StudentLogin';
-
 
 
 function App() {
@@ -9,12 +7,16 @@ function App() {
     <div>
       <StudentLogin/>
       <Routes>
+
+          <Route path="/" element={<Dasboard />} />
+
           <Route element={<></>} />
           <Route element={<></>} />
-          <Route element={<></>} />
+
       </Routes>
     </div>
   );
 }
+
 
 export default App;
